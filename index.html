@@ -1,29 +1,92 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Alejandro</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Bienvenido a mi portafolio</h1>
-    </header>
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Ingeniero especializado en MLOps, Machine Learning y GenAI...</p>
-    </section>
-    <section>
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="proyecto1.html">Proyecto 1</a></li>
-            <li><a href="proyecto2.html">Proyecto 2</a></li>
-            <!-- Añade más proyectos según sea necesario -->
-        </ul>
-    </section>
-    <footer>
-        <p>Contacto: alejandro.a01@outlook.com</p>
-    </footer>
-</body>
-</html>
+---
+layout: default
+title: "Home"
+---
+
+<div class="hero">
+    <h1>Senior MLOps Engineer &amp; Technical Leader</h1>
+    <p>
+      Leading cross-functional teams of engineers in data engineering, machine learning, and data science to deliver high-impact projects. I specialize in leveraging MLOps, LLMOps, and AI-driven solutions to create, manage, and scale innovative models that drive business value.
+    </p>
+    <div class="hero-buttons">
+      <a href="{{ '/about' | relative_url }}" class="btn">More About me</a>
+      <a href="{{ '/resume.pdf' | relative_url }}" class="btn">Download Resume</a>
+    </div>
+  </div>
+  
+
+
+<section class="container experience-section">
+    <h2>Professional Experience</h2>
+    
+    <!-- Capgemini Experience -->
+    <div class="project">
+      <h3>Capgemini Engineering</h3>
+      <p>Senior Machine Learning Engineer & Technical Lead for the Propel project. Drove over $5M in incremental revenue by developing CI/CD pipelines and automating model retraining processes.</p>
+      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
+    </div>
+    
+    <!-- AB InBev Experience -->
+    <div class="project">
+      <h3>AB InBev</h3>
+      <p>Senior MLOps Engineer who directed ML initiatives across 8 countries, contributing to over $100M in revenue by deploying scalable ML algorithms for promotional offers.</p>
+      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
+    </div>
+    
+    <!-- Nutresa Experience -->
+    <div class="project">
+      <h3>Comercial Nutresa</h3>
+      <p>Data Analyst responsible for developing automation projects and end-to-end ML models that improved operations and introduced agile methodologies at Grupo Nutresa.</p>
+      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
+    </div>
+    
+    <!-- Azimut Experience -->
+    <div class="project">
+      <h3>Azimut Energy</h3>
+      <p>Data Analyst who achieved over COP 1B in identified energy savings and executed projects worth COP 300M through energy consumption analysis, statistical modeling, and automation.</p>
+      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
+    </div>
+    
+    <!-- Procter & Gamble Experience -->
+    <div class="project">
+      <h3>Procter & Gamble</h3>
+      <p>Project Leader managing utilities and process automation projects. Led analytics of gas and energy consumption data, and evaluated capital projects to optimize production efficiency.</p>
+      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
+    </div>
+  </section>
+
+<section class="container projects-section">
+  <h2>Featured Projects</h2>
+  
+  <!-- GitHub Project 1: Flight Price Q-Learning -->
+  <div class="project">
+    <h3>Flight Price Q-Learning</h3>
+    <p>A reinforcement learning approach to predict flight prices. Explore the code and methodology behind the model.</p>
+    <a href="https://github.com/alejandro-aristizabal/flight-price-qlearning" target="_blank" class="btn">View Details</a>
+  </div>
+  
+  <!-- GitHub Project 2: ECR Bankrup API -->
+  <div class="project">
+    <h3>ECR Bankrup API</h3>
+    <p>An API designed for financial risk assessment with robust error handling and scalability, implemented with modern practices.</p>
+    <a href="https://github.com/alejandro-aristizabal/ecr-bankrup-api" target="_blank" class="btn">View Details</a>
+  </div>
+  
+  <!-- GitHub Project 3: Feathr Feature Store -->
+  <div class="project">
+    <h3>Feathr: Feature Store</h3>
+    <p>A feature store implementation that streamlines feature management for machine learning pipelines and microservices architectures.</p>
+    <a href="https://github.com/alejandro-aristizabal/feathr" target="_blank" class="btn">View Details</a>
+  </div>
+</section>
+
+
+<section class="container contact-section">
+  <h2>Get In Touch</h2>
+  <p>If you’d like to discuss opportunities or collaborate on a project, please reach out!</p>
+  <p>
+    <strong>Phone:</strong> 3207861861<br>
+    <strong>Email:</strong> <a href="mailto:alejandro.a01@outlook.com">alejandro.a01@outlook.com</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aristizabalalejandro" target="_blank">aristizabalalejandro</a>
+  </p>
+</section>
