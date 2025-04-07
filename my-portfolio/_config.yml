@@ -1,0 +1,21 @@
+title: "Alejandro Aristizabal's Portfolio"
+description: "A professional portfolio showcasing my work."
+baseurl: "" # Leave blank if deploying at root: yourusername.github.io
+url: "https://alejandro-aristizabal.github.io"
+
+# Since we're using a custom layout, comment out or remove the default theme:
+# theme: minima
+
+# Exclude folders you don't want processed by Jekyll:
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+  - _site
+
+# If you want to enable plugins, do so here:
+plugins:
+  - jekyll-feed
