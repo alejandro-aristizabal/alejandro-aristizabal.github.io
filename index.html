@@ -3,85 +3,157 @@ layout: default
 title: "Home"
 ---
 
-<div class="hero">
-  <h1>Senior MLOps Engineer &amp; Technical Leader</h1>
+<section class="hero">
+  <img class="avatar" src="https://avatars.githubusercontent.com/u/92890483?s=240" width="120" height="120" alt="Alejandro Aristizábal Sánchez">
+  <h1>Tech Lead · AI &amp; Machine Learning</h1>
   <p>
-    I lead cross-functional teams in building scalable ML and AI solutions that have personally impacted hundreds of thousands of clients. With a focus on continuous delivery, I drive high-impact projects that blend traditional ML with advanced LLMOps practices.
+    7+ years shipping ML and AI products end to end and owning their outcomes. I build the platforms
+    that take models from notebook to production: feature stores, CI/CD for models, low-latency serving,
+    and, when GenAI adds value, RAG services and agents with real evaluations behind them.
   </p>
   <div class="hero-buttons">
-    <a href="{{ '/about' | relative_url }}" class="btn">Discover My Impact</a>
-    <a href="{{ '/resume.pdf' | relative_url }}" class="btn">Download Resume</a>
+    <a href="#projects" class="btn">See my work</a>
+    <a href="{{ '/resume.pdf' | relative_url }}" class="btn btn-outline">Download resume</a>
   </div>
-</div>
-
-  
-
-
-<section class="container experience-section">
-    <h2>Professional Experience</h2>
-    
-    <!-- Capgemini Experience -->
-    <div class="project">
-      <h3>Capgemini Engineering</h3>
-      <p>Senior Machine Learning Engineer & Technical Lead for the Propel project. Drove over $5M in incremental revenue by developing CI/CD pipelines and automating model retraining processes.</p>
-      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
-    </div>
-    
-    <!-- AB InBev Experience -->
-    <div class="project">
-      <h3>AB InBev</h3>
-      <p>Senior MLOps Engineer who directed ML initiatives across 8 countries, contributing to over $100M in revenue by deploying scalable ML algorithms for promotional offers.</p>
-      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
-    </div>
-    
-    <!-- Nutresa Experience -->
-    <div class="project">
-      <h3>Comercial Nutresa</h3>
-      <p>Data Analyst responsible for developing automation projects and end-to-end ML models that improved operations and introduced agile methodologies at Grupo Nutresa.</p>
-      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
-    </div>
-    
-    <!-- Azimut Experience -->
-    <div class="project">
-      <h3>Azimut Energy</h3>
-      <p>Data Analyst who achieved over COP 1B in identified energy savings and executed projects worth COP 300M through energy consumption analysis, statistical modeling, and automation.</p>
-      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
-    </div>
-    
-    <!-- Procter & Gamble Experience -->
-    <div class="project">
-      <h3>Procter & Gamble</h3>
-      <p>Project Leader managing utilities and process automation projects. Led analytics of gas and energy consumption data, and evaluated capital projects to optimize production efficiency.</p>
-      <a href="https://www.linkedin.com/in/aristizabalalejandro/" class="btn">View Details</a>
-    </div>
-  </section>
-
-<section class="container projects-section">
-  <h2>Featured Projects</h2>
-  
-  <!-- GitHub Project 1: Flight Price Q-Learning -->
-  <div class="project">
-    <h3>Flight Price Q-Learning</h3>
-    <p>A reinforcement learning approach to predict flight prices. Explore the code and methodology behind the model.</p>
-    <a href="https://github.com/alejandro-aristizabal/flight-price-qlearning" target="_blank" rel="noopener" class="btn">View Details</a>
-  </div>
-  
-  <!-- GitHub Project 2: ECR Bankrup API -->
-  <div class="project">
-    <h3>ECR Bankrup API</h3>
-    <p>An API designed for financial risk assessment with robust error handling and scalability, implemented with modern practices.</p>
-    <a href="https://github.com/alejandro-aristizabal/ecr-bankrup-api" target="_blank" rel="noopener" class="btn">View Details</a>
-  </div>
-  
 </section>
 
+<section class="container" aria-labelledby="impact-title">
+  <h2 id="impact-title" class="visually-hidden">Highlights</h2>
+  <ul class="stats">
+    <li><strong>USD 100M+</strong><span>incremental revenue from ML in 8 countries</span></li>
+    <li><strong>USD 5M+</strong><span>from a personalization platform I led</span></li>
+    <li><strong>10M+</strong><span>recommendations served, p95 &lt; 150 ms</span></li>
+    <li><strong>30%</strong><span>lower run cost on the same platform</span></li>
+  </ul>
+</section>
 
-<section class="container contact-section">
-  <h2>Get In Touch</h2>
-  <p>If you’d like to discuss opportunities or collaborate on a project, please reach out!</p>
-  <p>
-    <strong>Phone:</strong> 3207861861<br>
-    <strong>Email:</strong> <a href="mailto:alejandro.a01@outlook.com">alejandro.a01@outlook.com</a><br>
-    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aristizabalalejandro" target="_blank" rel="noopener">aristizabalalejandro</a>
+<section class="container section" id="experience" aria-labelledby="experience-title">
+  <h2 id="experience-title">Experience</h2>
+  <ol class="timeline">
+    <li class="job">
+      <div class="job-head">
+        <h3>Mercado Libre</h3>
+        <span class="job-date">Current</span>
+      </div>
+    </li>
+    <li class="job">
+      <div class="job-head">
+        <h3>Capgemini Engineering <span class="muted">· client: Royal Caribbean Group</span></h3>
+        <span class="job-date">From Aug 2024</span>
+      </div>
+      <p class="job-role">Senior Machine Learning Engineer (Tech Lead)</p>
+      <ul>
+        <li>Led the architecture of Propel, a personalization platform that went from a single-ship pilot to fleet-wide adoption at Celebrity Cruises: USD 5M+ incremental revenue and 10M+ recommendations.</li>
+        <li>Moved it from batch scoring to event-driven inference with online/offline feature stores and idempotent pipelines.</li>
+        <li>CI/CD with Azure DevOps and Databricks asset bundles for safe retraining; lineage and access policies with Unity Catalog.</li>
+        <li>Shipped GenAI capabilities: RAG over internal docs, operations agents and MCP connectors to internal tools.</li>
+      </ul>
+    </li>
+    <li class="job">
+      <div class="job-head">
+        <h3>AB InBev / Bavaria</h3>
+        <span class="job-date">Oct 2021 – Aug 2024</span>
+      </div>
+      <p class="job-role">Senior MLOps Engineer</p>
+      <ul>
+        <li>MLOps tech lead for promotion algorithms in 8 countries, with Spark/Airflow pipelines and batch and streaming feature stores.</li>
+        <li>Co-built a global ML platform: CI/CD, reproducible training, secure serving, monitoring, model registry and lineage.</li>
+        <li>USD 100M+ incremental revenue from regional expansion of the algorithms; 70%+ code quality improvement through standards and automated tests.</li>
+      </ul>
+    </li>
+    <li class="job">
+      <div class="job-head">
+        <h3>Universidad de los Andes</h3>
+        <span class="job-date">Feb 2024 – Aug 2024</span>
+      </div>
+      <p class="job-role">Backend Developer</p>
+      <p>Co-designed the backend of a schedule selection platform (FastAPI, Azure Functions, gRPC) and its integration with the university data bus.</p>
+    </li>
+    <li class="job">
+      <div class="job-head">
+        <h3>Earlier roles</h3>
+        <span class="job-date">2019 – 2021</span>
+      </div>
+      <p><strong>Comercial Nutresa</strong>, Data Analyst: RPA automations and end-to-end ML models for logistics.<br>
+      <strong>Azimut Energy</strong>, Data Analyst: COP 1B+ in identified energy savings across 1,000+ measurement points.<br>
+      <strong>Procter &amp; Gamble</strong>, Project Leader: utilities analytics and capital project evaluation.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="container section" id="projects" aria-labelledby="projects-title">
+  <h2 id="projects-title">Projects</h2>
+  <p class="section-intro">Most of my work lives in private repositories. Happy to walk through any of them in a conversation.</p>
+  <div class="cards">
+    <article class="card">
+      <h3>Propel: personalized offers engine</h3>
+      <p>Recommendation and ranking workflows with feature stores, experimentation and rollout controls. Revenue impact measured with uplift tests, high-concurrency serving with SLO-based monitoring.</p>
+      <ul class="tags"><li>Databricks</li><li>Feature store</li><li>Azure DevOps</li><li>Uplift testing</li></ul>
+      <span class="badge">Work · private</span>
+    </article>
+    <article class="card">
+      <h3>GenAI ops assistant</h3>
+      <p>Retrieval over internal docs and system tables, plus agentic tools exposed through MCP connectors to automate diagnostics and cut time to resolution.</p>
+      <ul class="tags"><li>RAG</li><li>Agents</li><li>MCP</li><li>Azure OpenAI</li></ul>
+      <span class="badge">Work · private</span>
+    </article>
+    <article class="card">
+      <h3>Global ML platform</h3>
+      <p>Training and serving platform with CI/CD, registry and governance, standardizing pipelines and observability for deployments in 8 countries.</p>
+      <ul class="tags"><li>Spark</li><li>Airflow</li><li>MLflow</li><li>Kubernetes</li></ul>
+      <span class="badge">Work · private</span>
+    </article>
+    <article class="card">
+      <h3>Mis pasos</h3>
+      <p>Web app to learn salsa, bachata, merengue and porro solo with a webcam. Moves are modeled as a graph of states, posture is tracked in the browser with MediaPipe and scored with joint angles and DTW against the beat.</p>
+      <ul class="tags"><li>React</li><li>TypeScript</li><li>MediaPipe</li><li>Three.js</li></ul>
+      <span class="badge">Side project · private</span>
+    </article>
+    <article class="card">
+      <h3>Donde Comer</h3>
+      <p>Search for dishes, not just restaurants, across menus in Medellín. Restaurant PDF menus are extracted into structured JSON, with price history, diet filters and a map.</p>
+      <ul class="tags"><li>LLM extraction</li><li>React</li><li>MapLibre</li><li>Zod</li></ul>
+      <span class="badge">Side project · private</span>
+    </article>
+    <article class="card">
+      <h3>CultuAI</h3>
+      <p>Learning app for geography, history and art with flashcards and spaced repetition, built on a Wikidata ETL pipeline. Early stage.</p>
+      <ul class="tags"><li>Wikidata</li><li>ETL</li><li>Spaced repetition</li></ul>
+      <span class="badge">Side project · private</span>
+    </article>
+    <article class="card">
+      <h3>Flight price Q-learning</h3>
+      <p>Reinforcement learning agent that learns when to buy a flight ticket from historical price data.</p>
+      <ul class="tags"><li>Reinforcement learning</li><li>Python</li></ul>
+      <a class="card-link" href="https://github.com/alejandro-aristizabal/flight-price-qlearning" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Bankruptcy prediction API</h3>
+      <p>Containerized model-serving API for financial risk assessment, deployed on AWS ECR.</p>
+      <ul class="tags"><li>FastAPI</li><li>Docker</li><li>AWS</li></ul>
+      <a class="card-link" href="https://github.com/alejandro-aristizabal/ecr-bankrup-api" rel="noopener">View on GitHub</a>
+    </article>
+  </div>
+</section>
+
+<section class="container section" id="skills" aria-labelledby="skills-title">
+  <h2 id="skills-title">Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Python, SQL, R, TypeScript</dd>
+    <dt>ML</dt><dd>scikit-learn, PyTorch, TensorFlow, XGBoost</dd>
+    <dt>Data</dt><dd>Spark, Airflow, Kafka, Delta Lake, feature stores</dd>
+    <dt>MLOps</dt><dd>MLflow, model registry, CI/CD, GitOps, monitoring, Grafana</dd>
+    <dt>Cloud</dt><dd>Azure, Databricks, GCP (Vertex AI, BigQuery), AWS, Docker, Kubernetes, Terraform</dd>
+    <dt>GenAI</dt><dd>Azure OpenAI, RAG, LangChain/LangGraph, agents, MCP, evaluations and guardrails</dd>
+  </dl>
+</section>
+
+<section class="container section" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Get in touch</h2>
+  <p>Open to talking about ML platforms, MLOps and applied GenAI.</p>
+  <p class="contact-links">
+    <a class="btn" href="mailto:alejandro.a01@outlook.com">alejandro.a01@outlook.com</a>
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/aristizabalalejandro" rel="noopener">LinkedIn</a>
+    <a class="btn btn-outline" href="https://github.com/alejandro-aristizabal" rel="noopener">GitHub</a>
   </p>
 </section>
