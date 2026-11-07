@@ -103,3 +103,58 @@ body {
     color: #aaa;
   }
   
+/* Header & footer (moved from inline styles so the dark theme applies) */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.site-footer a { color: #8cc8ff; }
+
+/* Links inside text need a readable color on dark backgrounds */
+main p a:not(.btn) { color: #8cc8ff; }
+
+/* Accessibility */
+a:focus-visible, .btn:focus-visible {
+  outline: 3px solid #8cc8ff;
+  outline-offset: 2px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: #fff;
+  color: #000;
+  padding: 8px 12px;
+  z-index: 10;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .hero { padding: 40px 16px; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 1.05rem; }
+  .container { padding: 16px; }
+  .site-title { font-size: 1.2rem; }
+}

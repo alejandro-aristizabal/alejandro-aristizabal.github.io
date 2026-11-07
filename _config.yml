@@ -1,5 +1,12 @@
-title: "Alejandro Aristizabal's Portfolio"
-description: "A professional portfolio showcasing my work."
+title: "Alejandro Aristizábal Sánchez"
+description: "Senior MLOps Engineer and Tech Lead. Scalable ML pipelines, CI/CD for models and LLMOps."
+lang: en
+author: Alejandro Aristizábal Sánchez
+social:
+  name: Alejandro Aristizábal Sánchez
+  links:
+    - https://www.linkedin.com/in/aristizabalalejandro
+    - https://github.com/alejandro-aristizabal
 baseurl: "" # Leave blank if deploying at root: yourusername.github.io
 url: "https://alejandro-aristizabal.github.io"
 
@@ -15,7 +22,9 @@ exclude:
   - README.md
   - .gitignore
   - _site
+  - .bundle
 
 # If you want to enable plugins, do so here:
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
